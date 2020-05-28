@@ -1,0 +1,29 @@
+{
+  "name": "conf2020",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --quiet index.html",
+    "build:css": "postcss src/app.css -o dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeCodeCampBA/conf2020.git"
+  },
+  "keywords": [],
+  "author": "Nicolas Quiroz <nh.quiroz@gmail.com> (nicolasquiroz.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FreeCodeCampBA/conf2020/issues"
+  },
+  "homepage": "https://github.com/FreeCodeCampBA/conf2020#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "dependencies": {}
+}

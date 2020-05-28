@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.transition {
+  transition: all 0.25s ease-out;
+}
+
+.text-2r {
+  font-size: 2rem;
+}
+
+.text-gradient {
+  text-transform: uppercase;
+  /* background: linear-gradient(to right, #30cfd0 0%, #330867 100%); */
+  color: #319795;
+  background-image: -webkit-linear-gradient(92deg, #30cfd0, #330867);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 5s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
