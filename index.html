@@ -8,7 +8,7 @@
     <meta name="title" content="freeCodeCampBA Conf 2020" />
     <meta
       name="description"
-      content="freeCodeCampBA Conf es una conferencia online, 100% abierta y gratuita, enfocada a personas que estén dando sus primeros pasos en la industria IT o aprendiendo para insertarse laboralmente."
+      content="freeCodeCampBA Conf es una conferencia online, 100% gratuita, enfocada a personas que estén dando sus primeros pasos en la industria o buscando insertarse laboralmente."
     />
 
     <!-- Open Graph / Facebook -->
@@ -17,7 +17,7 @@
     <meta property="og:title" content="freeCodeCampBA Conf 2020" />
     <meta
       property="og:description"
-      content="freeCodeCampBA Conf es una conferencia online, 100% abierta y gratuita, enfocada a personas que estén dando sus primeros pasos en la industria IT o aprendiendo para insertarse laboralmente."
+      content="freeCodeCampBA Conf es una conferencia online, 100% gratuita, enfocada a personas que estén dando sus primeros pasos en la industria o buscando insertarse laboralmente."
     />
     <meta property="og:image" content="https://i.imgur.com/QhVl2FW.png" />
 
@@ -27,7 +27,7 @@
     <meta property="twitter:title" content="freeCodeCampBA Conf 2020" />
     <meta
       property="twitter:description"
-      content="freeCodeCampBA Conf es una conferencia online, 100% abierta y gratuita, enfocada a personas que estén dando sus primeros pasos en la industria IT o aprendiendo para insertarse laboralmente."
+      content="freeCodeCampBA Conf es una conferencia online, 100% gratuita, enfocada a personas que estén dando sus primeros pasos en la industria o buscando insertarse laboralmente."
     />
     <meta property="twitter:image" content="https://i.imgur.com/QhVl2FW.png" />
     <link rel="stylesheet" href="dist/styles.css" />
@@ -38,63 +38,109 @@
     <script src="https://kit.fontawesome.com/7a1eabd748.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <main class="container mx-auto sm:mt-12 mt-6" style="padding: 18px;">
+    <header>
+      <div class="hint"></div>
+      <nav
+        class="container mx-auto flex justify-between items-center py-2"
+        style="padding-left: 18px; padding-right: 18px;"
+      >
+        <div class="w-6">
+          <a href="https://freecodecampba.org" target="_blank" rel="noopener noreferrer">
+            <img
+              class="object-scale-down opacity-50 transition hover:opacity-100"
+              src="https://res.cloudinary.com/dxm7p7ceq/image/upload/v1550495218/logo_rpgen2.png"
+              alt="freeCodeCampBA"
+            />
+          </a>
+        </div>
+
+        <div class="text-sm">
+          <a href="#home" class="transition text-gray-700 hover:text-teal-400 font-normal mr-4">
+            Inicio
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transition text-gray-700 hover:text-teal-400 font-normal mr-4"
+          >
+            Registro
+          </a>
+          <a href="#schedule" class="transition text-gray-700 hover:text-teal-400 font-normal mr-4">
+            Charlas
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home" class="container mx-auto sm:mt-12 mt-5" style="padding: 18px;">
       <h1
-        class="leading-none text-gradient mb-16 sm:mb-24 sm:text-5xl text-2r"
+        class="leading-none title-gradient font-bold mb-8 sm:mb-16 sm:text-6xl text-2r"
         style="font-family: 'Inter', sans-serif;"
       >
-        freeCodeCampBA Conf 2020
+        freeCodeCampBA <br /><span>Conf 2020</span>
       </h1>
-      <section class="flex mb-8">
-        <div class="border-solid w-11/12">
-          <section class="sm:mb-8 mb-6">
-            <h2 class="text-gray-600 font-medium text-2xl">13 de Junio, 2020</h2>
+
+      <section class="flex">
+        <div class="max-w-4xl">
+          <section class="mb-12">
+            <h2 class="date-gradient font-normal text-2xl sm:text-3xl">13 de Junio, 2020</h2>
           </section>
 
           <div class="font-light">
             <p class="text-gray-900 sm:text-2xl text-lg sm:text-xl leading-normal">
               <em>freeCodeCampBA Conf</em> es una
               <strong class="transition hover:text-teal-400 font-medium">conferencia online</strong
-              >,
-              <strong class="transition hover:text-teal-400 font-medium"
-                >100% abierta y gratuita</strong
-              >, enfocada a personas que estén dando sus primeros pasos en la industria IT o
-              aprendiendo para insertarse laboralmente.
+              >, <strong class="transition hover:text-teal-400 font-medium">100% gratuita</strong>,
+              con charlas sobre
+              <strong class="transition hover:text-teal-400 font-medium">desarrollo</strong>,
+              <strong class="transition hover:text-teal-400 font-medium">tecnología</strong> y
+              <strong class="transition hover:text-teal-400 font-medium">soft skills</strong>,
+              enfocada a personas que estén dando sus primeros pasos en la industria o buscando
+              insertarse laboralmente.
             </p>
 
-            <br />
-
-            <p class="text-gray-900 sm:text-2xl text-lg leading-normal">
-              El contenido está basado principalmente en la
-              <a
-                class="transition underline hover:text-teal-400 font-normal"
-                href="https://www.freecodecamp.org/learn"
-                >currícula de freeCodeCamp</a
-              >.
-            </p>
-          </div>
-
-          <div class="mt-16">
-            <a href="https://www.youtube.com/channel/UCML6D-qES0T7YKJXfMgKo4A">
-              <button
-                class="transition max-w-xs bg-red-800 hover:bg-red-600 text-white py-2 px-3 rounded shadow-inner"
-              >
-                <i class="fab fa-youtube fa-lg mr-2"></i>
-                <span class="text-lg"
-                  >Ver <span class="font-semibold">freeCodeCampBA Conf</span></span
+            <div class="mt-12">
+              <div class="inline-block mr-4 mb-4">
+                <a href="#">
+                  <button
+                    class="transition max-w-xs bg-teal-700 hover:bg-teal-500 text-white py-2 px-3 rounded shadow-inner"
+                  >
+                    <span class="text-base sm:text-lg"
+                      ><i class="fas fa-ticket-alt fa-lg mr-2"></i>
+                      <span class="font-semibold">Registrarse</span></span
+                    >
+                  </button></a
                 >
-              </button></a
-            >
+              </div>
+
+              <div class="inline-block">
+                <a href="https://www.youtube.com/channel/UCML6D-qES0T7YKJXfMgKo4A">
+                  <button
+                    class="transition max-w-xs bg-red-800 hover:bg-red-600 text-white py-2 px-3 rounded shadow-inner"
+                  >
+                    <i class="fab fa-youtube fa-lg mr-2"></i>
+                    <span class="text-base sm:text-lg"
+                      >Ver <span class="font-semibold">freeCodeCampBA Conf</span></span
+                    >
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="hidden lg:block">
-          <img class="h-auto max-w-full" src="assets/undraw_youtube_tutorial_2gn3.svg" alt="" />
+          <img class="object-scale-down max-w-md" src="assets/fcc_primary_hero.svg" alt="" />
         </div>
       </section>
     </main>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="z-index: -1;">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style="z-index: -1; margin-top: -30px;"
+    >
       <path
         class="shadow-inner"
         fill="#319795"
@@ -103,10 +149,10 @@
       ></path>
     </svg>
 
-    <div style="background-color: #319795;">
-      <section class="-mt-1 flex flex-col items-center" style="padding: 18px;">
-        <section class="mb-20" style="margin-top: 5px;">
-          <h2 class="text-gray-100 font-bold text-3xl text-center">Programa</h2>
+    <section style="background-color: #319795;">
+      <section id="schedule" class="-mt-1 flex flex-col items-center" style="padding: 18px;">
+        <section class="mb-20" style="margin-top: 2rem;">
+          <h2 class="text-gray-100 font-bold text-3xl text-center">Charlas</h2>
         </section>
 
         <section class="max-w-2xl">
@@ -156,9 +202,15 @@
                     <a
                       class="mr-2 transition hover:text-teal-400"
                       href="https://twitter.com/joelalejandro"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       ><i class="fab fa-twitter"></i
                     ></a>
-                    <a class="transition hover:text-teal-400" href="https://joey.works"
+                    <a
+                      class="transition hover:text-teal-400"
+                      href="https://joey.works"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       ><i class="fas fa-link"></i
                     ></a>
                   </p>
@@ -201,10 +253,18 @@
                 <div class="text-base">
                   <p class="text-gray-700 font-light leading-none mb-2">John Doe</p>
                   <p class="text-gray-600">
-                    <a class="mr-2 transition hover:text-teal-400" href="#"
+                    <a
+                      class="mr-2 transition hover:text-teal-400"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       ><i class="fab fa-twitter"></i
                     ></a>
-                    <a class="transition hover:text-teal-400" href="#"
+                    <a
+                      class="transition hover:text-teal-400"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       ><i class="fas fa-link"></i
                     ></a>
                   </p>
@@ -244,10 +304,18 @@
                 <div class="text-base">
                   <p class="text-gray-700 font-light leading-none mb-2">Mara Schmitman</p>
                   <p class="text-gray-600">
-                    <a class="mr-2 transition hover:text-teal-400" href="#"
+                    <a
+                      class="mr-2 transition hover:text-teal-400"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       ><i class="fab fa-twitter"></i
                     ></a>
-                    <a class="transition hover:text-teal-400" href="#"
+                    <a
+                      class="transition hover:text-teal-400"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       ><i class="fas fa-link"></i
                     ></a>
                   </p>
@@ -257,7 +325,7 @@
           </div>
         </section>
       </section>
-    </div>
+    </section>
 
     <svg
       class="-mt-1 shadow-inner"
@@ -272,15 +340,25 @@
       ></path>
     </svg>
 
-    <section class="my-8">
-      <p class="text-center">
-        2020. Organizado por
+    <footer class="my-8">
+      <div class="flex justify-center mb-4 opacity-75 transition hover:opacity-100">
         <a
-          class="transition underline hover:text-teal-400 font-bold"
+          href="https://twitter.com/intent/tweet?hashtags=FCCBAConf2020&screen_name=freeCodeCampBA&ref_src=twsrc%5Etfw"
+          class="twitter-mention-button"
+          data-show-count="false"
+          >@freeCodeCampBA</a
+        >
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+
+      <p class="text-center text-gray-700">
+        Organizado por
+        <a
+          class="underline transition hover:text-teal-400 font-medium"
           href="https://www.freecodecampba.org"
           >freeCodeCampBA</a
         >.
       </p>
-    </section>
+    </footer>
   </body>
 </html>
