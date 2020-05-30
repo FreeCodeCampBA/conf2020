@@ -39,7 +39,7 @@
   </head>
   <body>
     <header>
-      <div class="hint"></div>
+      <div class="hint shadow-inner"></div>
       <nav
         class="container mx-auto flex justify-end items-center py-2"
         style="padding-left: 18px; padding-right: 18px;"
@@ -75,18 +75,21 @@
 
     <main id="home" class="container mx-auto sm:mt-12 mt-5" style="padding: 18px;">
       <h1
-        class="leading-none title-gradient font-bold mb-8 sm:mb-16"
+        class="leading-none animated-gradient font-bold mb-8 sm:mb-12"
         style="font-family: 'Inter', sans-serif;"
       >
-        <span class="text-2r sm:text-6xl">FREECODECAMPBA</span> <br /><span class="text-5xl"
+        <span class="text-2r sm:text-6xl">FREECODECAMPBA</span> <br /><span
+          class="sm:text-6xl text-5xl"
           >CONF 2020</span
         >
       </h1>
 
       <section class="flex">
-        <div class="max-w-4xl">
+        <div class="max-w-3xl mr-6">
           <section class="mb-12">
-            <h2 class="date-gradient font-normal text-2xl sm:text-3xl">13 de Junio, 2020</h2>
+            <h2 class="animated-gradient text-2xl sm:text-3xl">
+              13 de Junio, 2020 | Online
+            </h2>
           </section>
 
           <div class="font-light">
@@ -134,7 +137,7 @@
 
         <div class="hidden lg:block">
           <img
-            class="object-scale-down max-w-md"
+            class="object-scale-down max-w-sm"
             src="https://raw.githubusercontent.com/FreeCodeCampBA/conf2020/master/assets/fcc_primary_hero.svg"
             alt=""
           />
@@ -157,7 +160,7 @@
 
     <section style="background-color: #319795;">
       <section id="schedule" class="-mt-1 flex flex-col items-center" style="padding: 18px;">
-        <section class="mb-20" style="margin-top: 2rem;">
+        <section class="mt-40 mb-20">
           <h2 class="text-gray-100 font-bold text-3xl text-center">Programa</h2>
         </section>
 
@@ -166,28 +169,31 @@
             <div
               class="border-t border-r border-b border-l border-gray-400 bg-white rounded p-6 flex flex-col leading-normal"
             >
-              <div class="mb-8">
-                <div class="-mt-1 -mr-1 mb-4">
-                  <span
-                    class="inline-block rounded px-2 py-1 text-xs text-blue-600 bg-blue-300 font-semibold opacity-75"
-                    >INTRO</span
-                  >
+              <div class="flex">
+                <div class="vertical-line block mr-12"></div>
+                <div class="ml-16 mb-8">
+                  <div class="-mt-1 -mr-1 mb-4">
+                    <span
+                      class="inline-block rounded px-2 py-1 text-xs text-blue-600 bg-blue-300 font-semibold opacity-75"
+                      >INTRO</span
+                    >
+                  </div>
+                  <div class="text-gray-600 font-base text-base mb-1">
+                    TBD
+                  </div>
+                  <div class="text-gray-900 font-bold text-xl mb-4">
+                    Bienvenida
+                  </div>
+                  <p class="text-gray-700 text-sm">
+                    Les damos la bienvenida a la primera conferencia que organizamos
+                    <img
+                      class="object-scale-down w-6 h-auto inline"
+                      src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/248/raising-hands_1f64c.png"
+                      alt="raised hands emoji"
+                    />
+                    de parte del equipo de <strong>freeCodeCampBA</strong>.
+                  </p>
                 </div>
-                <div class="text-gray-600 font-base text-base mb-1">
-                  TBD
-                </div>
-                <div class="text-gray-900 font-bold text-xl mb-4">
-                  Bienvenida
-                </div>
-                <p class="text-gray-700 text-sm">
-                  Les damos la bienvenida a la primera conferencia que organizamos
-                  <img
-                    class="object-scale-down w-6 h-auto inline"
-                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/248/raising-hands_1f64c.png"
-                    alt="raised hands emoji"
-                  />
-                  de parte del equipo de <strong>freeCodeCampBA</strong>.
-                </p>
               </div>
 
               <div class="flex sm:flex-row flex-col justify-between">
@@ -486,7 +492,7 @@
             </div>
           </div>
 
-          <div class="shadow">
+          <div class="shadow mb-8">
             <div
               class="border-t border-r border-b border-l border-gray-400 bg-white rounded p-6 flex flex-col leading-normal"
             >
@@ -527,6 +533,67 @@
                     <a
                       class="transition hover:text-teal-500"
                       href="https://github.com/martin2786"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shadow">
+            <div
+              class="border-t border-r border-b border-l border-gray-400 bg-white rounded p-6 flex flex-col leading-normal"
+            >
+              <div class="mb-8">
+                <div class="-mt-1 -mr-1 mb-4">
+                  <span
+                    class="inline-block rounded px-2 py-1 text-xs text-green-600 bg-green-300 font-semibold opacity-75"
+                    >CHARLA</span
+                  >
+                </div>
+                <div class="text-gray-600 font-base text-base mb-1">
+                  TBD
+                </div>
+                <div class="text-gray-900 font-bold text-xl mb-4">
+                  Tengo mi aplicación web... ¿cómo la muestro al mundo?
+                </div>
+                <p class="text-gray-700 text-sm">
+                  Terminaste de crear tu aplicación web. Ahora, ¿cómo la publicás en internet?
+                </p>
+
+                <br />
+
+                <p class="text-gray-700 text-sm">
+                  En esta charla veremos una introducción a conceptos relacionados con Cloud
+                  Computing, cómo podriamos utilizar estos servicios para desplegar aplicaciones
+                  desarrolladas con distintas tecnologías (JavaScript, NodeJS, Python, React, etc) y
+                  compararemos dos de los proveedores más populares: Heroku y AWS.
+                </p>
+              </div>
+              <div class="flex items-center">
+                <img
+                  class="w-20 h-20 rounded-full mr-4 shadow"
+                  src="https://raw.githubusercontent.com/FreeCodeCampBA/conf2020/master/assets/speakers/luciano-alzugaray.jpg"
+                  alt="Luciano Alzugaray"
+                />
+                <div class="text-base">
+                  <p class="text-sm text-gray-700 font-light leading-none mb-2">
+                    Luciano Alzugaray
+                  </p>
+                  <p class="text-gray-600">
+                    <a
+                      class="mr-2 transition hover:text-teal-500"
+                      href="https://twitter.com/nLunnN"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      class="transition hover:text-teal-500"
+                      href="https://github.com/LucianoAlzugaray"
                       target="_blank"
                       rel="noopener noreferrer"
                       ><i class="fas fa-link"></i
@@ -583,7 +650,7 @@
           rel="noopener noreferrer"
           >freeCodeCampBA</a
         >
-        |
+        <span class="hidden sm:inline">|</span>
         <a
           class="underline transition hover:text-teal-500 font-medium"
           href="https://github.com/FreeCodeCampBA/codigo"

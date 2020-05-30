@@ -15,6 +15,11 @@ body {
   background-color: #319795;
 }
 
+.vertical-line {
+  border-left: 3px solid red;
+  height: 500px;
+}
+
 .transition {
   transition: all 0.25s ease-out;
 }
@@ -23,7 +28,7 @@ body {
   font-size: 2rem;
 }
 
-.title-gradient {
+.animated-gradient {
   /* background: linear-gradient(to right, #30cfd0 0%, #330867 100%); */
   color: #319795;
   background-image: -webkit-linear-gradient(92deg, #30cfd0, #330867);
@@ -32,11 +37,11 @@ body {
   -webkit-animation: hue 5s infinite linear;
 }
 
-.date-gradient {
+/* .date-gradient {
   background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 @-webkit-keyframes hue {
   from {
