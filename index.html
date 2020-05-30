@@ -40,34 +40,24 @@
   <body>
     <header>
       <div class="hint shadow-inner"></div>
-      <nav
-        class="container mx-auto flex justify-end items-center py-2"
-        style="padding-left: 18px; padding-right: 18px;"
-      >
-        <!-- <div class="w-6">
-          <a href="https://freecodecampba.org" target="_blank" rel="noopener noreferrer">
-            <img
-              class="object-scale-down opacity-50 transition hover:opacity-100"
-              src="https://i.imgur.com/wmPooX2.png"
-              alt="freeCodeCampBA"
-            />
-          </a>
-        </div> -->
-
+      <nav class="flex justify-end py-2">
         <div class="text-sm">
-          <a href="#home" class="transition text-gray-700 hover:text-teal-500 font-normal mr-4">
+          <a href="#home" class="transition text-gray-600 hover:text-gray-900 font-normal mr-4">
             Inicio
           </a>
+          <!-- <a href="#about" class="transition text-gray-700 hover:text-teal-500 font-normal mr-4">
+            Acerca de
+          </a> -->
+          <a href="#schedule" class="transition text-gray-600 hover:text-gray-900 font-normal mr-4">
+            Programa
+          </a>
           <a
-            href="#"
+            href="https://www.eventbrite.com.ar/e/freecodecampba-conf-2020-tickets-107331066108#tickets"
             target="_blank"
             rel="noopener noreferrer"
-            class="transition text-gray-700 hover:text-teal-500 font-normal mr-4"
+            class="transition nav-text-gradient hover:animated-gradient font-semibold mr-5"
           >
-            Registro
-          </a>
-          <a href="#schedule" class="transition text-gray-700 hover:text-teal-500 font-normal mr-4">
-            Programa
+            Registrate
           </a>
         </div>
       </nav>
@@ -107,27 +97,54 @@
             </p>
 
             <div class="mt-12">
-              <div class="inline-block mr-4 mb-4">
-                <a href="#">
-                  <button
-                    class="transition max-w-xs bg-teal-700 hover:bg-teal-500 text-white py-2 px-3 rounded shadow-inner"
-                  >
-                    <span class="text-base sm:text-lg"
-                      ><i class="fas fa-ticket-alt fa-lg mr-2"></i>
-                      <span class="font-medium">Registrarse</span></span
-                    >
-                  </button></a
+              <div class="inline-block mr-3 mb-4">
+                <!-- Noscript content for added SEO -->
+                <noscript
+                  ><a
+                    href="https://www.eventbrite.com.ar/e/freecodecampba-conf-2020-tickets-107331066108"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  ></a
+                ></noscript>
+
+                <button
+                  id="eventbrite-widget-modal-trigger-107331066108"
+                  type="button"
+                  class="transition max-w-xs border-solid border-2 border-teal-600 bg-fafafa hover:bg-teal-100 text-teal-600 py-2 px-3 rounded shadow-inner"
                 >
+                  <span class="text-base sm:text-lg"
+                    ><i class="fas fa-ticket-alt fa-lg mr-2"></i>
+                    <span class="font-medium">Registrate</span></span
+                  >
+                </button>
+
+                <script src="https://www.eventbrite.com.ar/static/widgets/eb_widgets.js"></script>
+
+                <script type="text/javascript">
+                  var exampleCallback = function () {
+                    console.log('Order complete!');
+                  };
+
+                  window.EBWidgets.createWidget({
+                    widgetType: 'checkout',
+                    eventId: '107331066108',
+                    modal: true,
+                    modalTriggerElementId: 'eventbrite-widget-modal-trigger-107331066108',
+                    onOrderComplete: exampleCallback
+                  });
+                </script>
               </div>
 
               <div class="inline-block">
                 <a href="https://www.youtube.com/channel/UCML6D-qES0T7YKJXfMgKo4A">
                   <button
-                    class="transition max-w-xs bg-red-800 hover:bg-red-600 text-white py-2 px-3 rounded shadow-inner"
+                    type="button"
+                    class="transition max-w-xs border-solid border-2 border-red-800 bg-red-800 hover:bg-red-600 text-white py-2 px-3 rounded shadow-inner"
                   >
                     <i class="fab fa-youtube fa-lg mr-2"></i>
                     <span class="text-base font-light sm:text-lg"
-                      >Ver <span class="font-medium">freeCodeCampBA Conf</span></span
+                      ><span class="hidden sm:inline">Ver </span>
+                      <span class="font-medium">Conf 2020</span></span
                     >
                   </button></a
                 >
@@ -159,9 +176,45 @@
       ></path>
     </svg>
 
+    <!-- <svg
+      class="-mt-1 shadow-inner"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style="z-index: -1;"
+    >
+      <path
+        fill="#319795"
+        fill-opacity="1"
+        d="M0,288L80,293.3C160,299,320,309,480,298.7C640,288,800,256,960,240C1120,224,1280,224,1360,224L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+      ></path>
+    </svg> -->
+
+    <!-- <section style="background-color: #fafafa;">
+      <section id="about" class="-mt-1 flex flex-col items-center" style="padding: 18px;">
+        <section class="my-20">
+          <h2 class="text-gray-700 font-bold text-3xl text-center">Acerca de</h2>
+        </section>
+
+        <section class="max-w-2xl">[WIP]</section>
+      </section>
+    </section> -->
+
+    <!-- <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style="z-index: -1; margin-top: -30px;"
+    >
+      <path
+        class="shadow-inner"
+        fill="#319795"
+        fill-opacity="1"
+        d="M0,128L60,154.7C120,181,240,235,360,240C480,245,600,203,720,176C840,149,960,139,1080,122.7C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg> -->
+
     <section style="background-color: #319795;">
       <section id="schedule" class="-mt-1 flex flex-col items-center" style="padding: 18px;">
-        <section class="mt-40 mb-20">
+        <section class="mt-40 mb-24">
           <h2 class="text-gray-100 font-bold text-3xl text-center">Programa</h2>
         </section>
 
@@ -170,31 +223,37 @@
             <div
               class="border-t border-r border-b border-l border-gray-400 bg-white rounded p-6 flex flex-col leading-normal"
             >
-              <div class="flex">
-                <div class="vertical-line block mr-12"></div>
-                <div class="ml-16 mb-8">
-                  <div class="-mt-1 -mr-1 mb-4">
-                    <span
-                      class="inline-block rounded px-2 py-1 text-xs text-blue-600 bg-blue-300 font-semibold opacity-75"
-                      >INTRO</span
-                    >
-                  </div>
-                  <div class="text-gray-600 font-base text-base mb-1">
-                    TBD
-                  </div>
-                  <div class="text-gray-900 font-bold text-xl mb-4">
-                    Bienvenida
-                  </div>
-                  <p class="text-gray-700 text-sm">
-                    Les damos la bienvenida a la primera conferencia que organizamos
-                    <img
-                      class="object-scale-down w-6 h-auto inline"
-                      src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/248/raising-hands_1f64c.png"
-                      alt="raised hands emoji"
-                    />
-                    de parte del equipo de <strong>freeCodeCampBA</strong>.
-                  </p>
+              <div class="mb-8">
+                <div class="-mt-1 -mr-1 mb-4">
+                  <span
+                    class="inline-block rounded px-2 py-1 text-xs text-blue-600 bg-blue-300 font-semibold opacity-75"
+                    ><i class="fas fa-rocket"></i> INTRO</span
+                  >
                 </div>
+                <div class="text-gray-600 font-base text-base mb-1">
+                  TBD
+                </div>
+                <div class="text-gray-900 font-bold text-xl mb-4">
+                  Bienvenida
+                </div>
+                <p class="text-gray-700 text-sm">
+                  Les damos la bienvenida a la primera conferencia que organizamos
+                  <img
+                    class="object-scale-down w-4 inline"
+                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/248/raising-hands_1f64c.png"
+                    alt="raised hands emoji"
+                  />
+                  de parte del equipo de
+                  <strong
+                    ><a
+                      class="transition hover:text-gray-900 font-medium"
+                      href="https://www.freecodecampba.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >freeCodeCampBA</a
+                    ></strong
+                  >.
+                </p>
               </div>
 
               <div class="flex sm:flex-row flex-col justify-between">
@@ -275,7 +334,7 @@
                 <div class="-mt-1 -mr-1 mb-4">
                   <span
                     class="inline-block rounded px-2 py-1 text-xs text-green-600 bg-green-300 font-semibold opacity-75"
-                    >CHARLA</span
+                    ><i class="fas fa-comment"></i> CHARLA</span
                   >
                 </div>
                 <div class="text-gray-600 font-base text-base mb-1">
@@ -338,7 +397,7 @@
                 <div class="-mt-1 -mr-1 mb-4">
                   <span
                     class="inline-block rounded px-2 py-1 text-xs text-yellow-600 bg-yellow-300 font-semibold opacity-75"
-                    >LIGHTNING TALK</span
+                    ><i class="fas fa-bolt"></i> LIGHTNING TALK</span
                   >
                 </div>
                 <div class="text-gray-600 font-base text-base mb-1">
@@ -357,8 +416,7 @@
                 <br />
 
                 <p class="text-gray-700 text-sm">
-                  Vamos a ver algunos ejemplos para llevar a cabo esto, incluyendo 3 componentes
-                  modals: Login, Registrar y Recuperar contraseña.
+                  Vamos a ver algunos ejemplos para llevar a cabo esto.
                 </p>
               </div>
               <div class="flex items-center">
@@ -398,7 +456,7 @@
                 <div class="-mt-1 -mr-1 mb-4">
                   <span
                     class="inline-block rounded px-2 py-1 text-xs text-green-600 bg-green-300 font-semibold opacity-75"
-                    >CHARLA</span
+                    ><i class="fas fa-comment"></i> CHARLA</span
                   >
                 </div>
                 <div class="text-gray-600 font-base text-base mb-1">
@@ -449,7 +507,7 @@
                 <div class="-mt-1 -mr-1 mb-4">
                   <span
                     class="inline-block rounded px-2 py-1 text-xs text-green-600 bg-green-300 font-semibold opacity-75"
-                    >CHARLA</span
+                    ><i class="fas fa-comment"></i> CHARLA</span
                   >
                 </div>
                 <div class="text-gray-600 font-base text-base mb-1">
@@ -501,7 +559,7 @@
                 <div class="-mt-1 -mr-1 mb-4">
                   <span
                     class="inline-block rounded px-2 py-1 text-xs text-green-600 bg-green-300 font-semibold opacity-75"
-                    >CHARLA</span
+                    ><i class="fas fa-comment"></i> CHARLA</span
                   >
                 </div>
                 <div class="text-gray-600 font-base text-base mb-1">
@@ -552,7 +610,7 @@
                 <div class="-mt-1 -mr-1 mb-4">
                   <span
                     class="inline-block rounded px-2 py-1 text-xs text-green-600 bg-green-300 font-semibold opacity-75"
-                    >CHARLA</span
+                    ><i class="fas fa-comment"></i> CHARLA</span
                   >
                 </div>
                 <div class="text-gray-600 font-base text-base mb-1">
@@ -621,39 +679,46 @@
       ></path>
     </svg>
 
-    <footer class="my-8">
-      <p class="flex justify-center mb-4 opacity-75 transition hover:opacity-100">
+    <footer class="mt-8 mb-4">
+      <p class="flex justify-center mt-10 mb-4 opacity-75 transition hover:opacity-100">
         <a
           href="https://twitter.com/intent/tweet?hashtags=FCCBAConf2020&screen_name=freeCodeCampBA&ref_src=twsrc%5Etfw"
           target="_blank"
           rel="noopener noreferrer"
           class="twitter-mention-button"
           data-show-count="false"
-          >@freeCodeCampBA</a
+          ><button
+            id="eventbrite-widget-modal-trigger-107331066108"
+            type="button"
+            class="transition max-w-xs border-solid border-2 border-blue-700 bg-blue-700 hover:bg-blue-600 text-fafafa px-2 rounded shadow-inner"
+          >
+            <span class="text-sm"
+              ><i class="fab fa-twitter"></i> <span class="font-medium">@freeCodeCampBA</span></span
+            >
+          </button></a
         >
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </p>
 
-      <p class="my-8 text-center text-gray-700">
+      <p class="mt-10 text-center text-gray-600 text-xs">
         Dev x
         <a
-          class="underline transition hover:text-teal-500 font-medium"
+          class="transition hover:text-gray-900 font-medium"
           href="https://twitter.com/_nhsz"
           target="_blank"
           rel="noopener noreferrer"
           >nhsz</a
         >
-        | Organizado por
+        |
         <a
-          class="underline transition hover:text-teal-500 font-medium"
-          href="https://www.freecodecampba.org"
+          class="transition hover:text-gray-900 font-medium"
+          href="https://freecodecampba.org"
           target="_blank"
           rel="noopener noreferrer"
           >freeCodeCampBA</a
         >
-        <span class="hidden sm:inline">|</span>
+        2020 |
         <a
-          class="underline transition hover:text-teal-500 font-medium"
+          class="transition hover:text-gray-900 font-medium"
           href="https://github.com/FreeCodeCampBA/codigo"
           target="_blank"
           rel="noopener noreferrer"

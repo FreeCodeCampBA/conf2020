@@ -15,9 +15,12 @@ body {
   background-color: #319795;
 }
 
-.vertical-line {
-  border-left: 3px solid red;
-  height: 500px;
+.text-fafafa {
+  color: #fafafa;
+}
+
+.bg-fafafa {
+  background-color: #fafafa;
 }
 
 .transition {
@@ -37,11 +40,11 @@ body {
   -webkit-animation: hue 5s infinite linear;
 }
 
-/* .date-gradient {
+.nav-text-gradient {
   background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-} */
+}
 
 @-webkit-keyframes hue {
   from {
@@ -51,3 +54,8 @@ body {
     -webkit-filter: hue-rotate(-360deg);
   }
 }
+
+/* .twitter-mention-button {
+  color: #fafafa;
+  background-color: #319795 !important;
+} */
