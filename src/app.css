@@ -27,10 +27,6 @@ body {
   transition: all 0.25s ease-out;
 }
 
-.text-2r {
-  font-size: 2rem;
-}
-
 .animated-gradient {
   /* background: linear-gradient(to right, #30cfd0 0%, #330867 100%); */
   color: #319795;
