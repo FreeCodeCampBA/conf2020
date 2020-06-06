@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html id="top" lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -118,44 +118,56 @@
     </script>
   </head>
   <body class="overflow-x-hidden">
-    <header>
+    <header class="fixed z-10 bg-fafafa w-full top-0 shadow-sm">
       <div class="hint shadow-inner"></div>
-      <nav class="flex justify-end py-2">
-        <div class="text-sm">
-          <a
-            href="#speakers"
-            class="hidden sm:inline transition text-gray-600 hover:text-gray-900 font-normal mr-4"
-          >
-            Speakers
-          </a>
-          <a href="#schedule" class="transition text-gray-600 hover:text-gray-900 font-normal mr-4">
-            Programa
-          </a>
-          <a href="#faq" class="transition text-gray-600 hover:text-gray-900 font-normal mr-4">
-            FAQ
-          </a>
-          <a
-            href="https://www.eventbrite.com.ar/e/freecodecampba-conf-2020-tickets-107331066108#tickets"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="transition animated-gradient hover:animated-gradient font-semibold mr-5"
-          >
-            Registrate
-          </a>
+      <nav class="py-1">
+        <div class="flex justify-between text-sm">
+          <div class="ml-4">
+            <a href="#top">
+              <img class="object-scale-down w-6" src="assets/home.svg" alt="" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="#speakers"
+              class="hidden sm:inline transition text-gray-600 hover:text-gray-900 font-normal mr-4"
+            >
+              Speakers
+            </a>
+            <a
+              href="#schedule"
+              class="transition text-gray-600 hover:text-gray-900 font-normal mr-4"
+            >
+              Programa
+            </a>
+            <a href="#faq" class="transition text-gray-600 hover:text-gray-900 font-normal mr-4">
+              FAQ
+            </a>
+            <a
+              href="https://www.eventbrite.com.ar/e/freecodecampba-conf-2020-tickets-107331066108#tickets"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="transition animated-gradient hover:animated-gradient font-semibold mr-4"
+            >
+              Registrate
+            </a>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main id="home" class="container mx-auto sm:mt-12 mt-5" style="padding: 18px;">
-      <h1
-        class="leading-none animated-gradient font-bold mb-8 sm:mb-12"
-        style="font-family: 'Roboto', sans-serif;"
-      >
-        <span class="text-4xl sm:text-6xl">FREECODECAMPBA</span> <br /><span
-          class="sm:text-6xl text-5xl"
-          >CONF 2020</span
+    <main class="container mx-auto mt-12" style="padding: 18px;">
+      <a href="https://freecodecampba.org/conf2020">
+        <h1
+          class="leading-none animated-gradient font-bold mb-8 sm:mb-12"
+          style="font-family: 'Roboto', sans-serif;"
         >
-      </h1>
+          <span class="text-22r sm:text-6xl">FREECODECAMPBA</span> <br /><span
+            class="sm:text-6xl text-5xl"
+            >CONF 2020</span
+          >
+        </h1>
+      </a>
 
       <section class="flex">
         <div class="max-w-3xl mr-6">
@@ -253,10 +265,10 @@
       ></path>
     </svg>
 
-    <section class="mt-16 mb-8" style="background-color: #fafafa;">
+    <section id="speakers" class="mt-16 mb-8" style="background-color: #fafafa;">
       <section class="-mt-1 overflow-hidden items-center" style="padding: 18px;">
         <section class="my-20">
-          <h2 id="speakers" class="text-gray-700 font-bold text-3xl text-center">Speakers</h2>
+          <h2 class="text-gray-700 font-bold text-3xl text-center">Speakers</h2>
         </section>
 
         <section class="container mx-auto flex flex-wrap justify-start max-w-4xl text-center">
@@ -532,10 +544,10 @@
       ></path>
     </svg>
 
-    <section style="background-color: #319795;">
+    <section id="schedule" style="background-color: #319795;">
       <section class="-mt-1 flex flex-col items-center" style="padding: 18px;">
         <section class="mt-16 mb-8">
-          <h2 id="schedule" class="text-gray-100 font-bold text-3xl text-center">Programa</h2>
+          <h2 class="text-gray-100 font-bold text-3xl text-center">Programa</h2>
         </section>
 
         <section class="max-w-4xl">
@@ -1961,10 +1973,10 @@
       ></path>
     </svg>
 
-    <section class="mt-16 mb-32" style="background-color: #fafafa;">
+    <section id="faq" class="mt-16 mb-32" style="background-color: #fafafa;">
       <section class="-mt-1 flex flex-col items-center" style="padding: 18px;">
         <section class="my-20">
-          <h2 id="faq" class="text-gray-700 font-bold text-3xl text-center">FAQ</h2>
+          <h2 class="text-gray-700 font-bold text-3xl text-center">FAQ</h2>
         </section>
 
         <section class="max-w-4xl">
